@@ -1,0 +1,18 @@
+{
+  "include": ["./src/**/*.ts", "../aliases.ts"],
+  "references": [{ "path": "../shared/tsconfig.json" }],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "target": "es2015",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    },
+  },
+  "exclude": ["node_modules"],
+}
